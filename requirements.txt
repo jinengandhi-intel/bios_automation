@@ -1,0 +1,10 @@
+subprocess
+json
+time
+selenium
+webdriver-manager
+pytesseract
+requests
+easyocr
+Pillow
+pyautogui
