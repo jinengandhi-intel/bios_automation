@@ -1,6 +1,3 @@
-subprocess
-json
-time
 selenium
 webdriver-manager
 pytesseract
