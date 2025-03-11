@@ -25,7 +25,8 @@ if os.path.exists("workspace"):
 os.mkdir("workspace")
 
 # Define the API endpoint
-url = "https://onecloudapi.intel.com/9d8e7555282bc3fc8c19ca90660e37a9/kvmlink/10288"
+node_label = os.environ.get('tdx_node_label')
+url = f"https://onecloudapi.intel.com/9d8e7555282bc3fc8c19ca90660e37a9/kvmlink/{node_label}"
 
 class CustomHttpClient(HttpClient):
     def get(self, url, params=None) -> Response:
